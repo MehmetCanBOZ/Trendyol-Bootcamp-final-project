@@ -1,0 +1,8 @@
+@import '../../assets/sass/mixin';
+
+.rem-card{
+  @include flex(row,center,center,0);
+  @include lgScreen {
+    @include flex(row,left,center,0);
+  }
+}
