@@ -1,0 +1,12 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/mixin';
+
+.cardholder {
+  @include size(130px,160px);
+  position: relative;
+  border: 3px solid $primary-gray;
+  cursor: pointer;
+  border-radius: 10px;
+  opacity: 0.6;
+  background-color: black;
+}
