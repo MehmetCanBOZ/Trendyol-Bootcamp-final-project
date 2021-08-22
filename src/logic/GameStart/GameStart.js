@@ -2,7 +2,6 @@ import * as _ from "lodash";
 
 const cardRanks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-// Function to generate card decks
 export const gameStarter =  () => {
   let cards = [],
     decks;
@@ -36,7 +35,6 @@ const DealCards = (shuffledCards) =>{
   result[1].push(shuffledCards[51])
   result[2].push(shuffledCards[52])
   result[3].push(shuffledCards[53])
-  result[4] = [shuffledCards[54]]
   result[10] = shuffledCards.slice(54);
      
   for (let i = 0; i <= 9; i++) {

@@ -1,12 +1,16 @@
-import './App.css';
+import './App.scss';
+import SpiderSolitaire from './Pages/SpiderSolitaire/SpiderSolitaire';
+import Home from './Components/Home/Home';
+import {BrowserRouter as Router, Routes , Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1 data-test="app-header">Reversed Spider Solitaire</h1>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/game" element={<SpiderSolitaire />}/>
+     </Routes>
+   </Router>
   );
 }
 

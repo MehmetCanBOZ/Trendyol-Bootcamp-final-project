@@ -1,26 +1,21 @@
-import {shallow} from 'enzyme';
-import App from "./App";
-import { findByTestAttr } from "./test/testUtils";
+import React from 'react';
+import App from './App';
+import Home from './Components/Home/Home';
+import {render, screen} from '@testing-library/react'
 
-const setup = () => shallow(<App/>);
+jest.mock("./Components/Home/Home");
+jest.mock("./Pages/SpiderSolitaire/SpiderSolitaire");
 
-describe("CardHolder Component Test",() =>{
-  let wrapper;
+describe("App Test Route",()=>{
+  describe("App component test",()=>{
+    test('Should render page header and HomePage on default route', () =>
+    {
+      Home.mockImplementation(()=><div>Home</div>)
+      render( 
+        <App/>
+      );
 
-  beforeEach(()=>{
-    wrapper = setup();
+      expect(screen.getByText("Home")).toBeInTheDocument();
+    });
   });
-
-  
-  test('renders header-wrapper', () => {
-    const appHeader= findByTestAttr(wrapper,'app-header');
-
-    expect(appHeader.length).toBe(1);
-  });
-  test('renders header-wrapper', () => {
-    const appHeaderText = findByTestAttr(wrapper,'app-header').text();
-
-    expect(appHeaderText).toBe("Reversed Spider Solitaire");
-  });
-   
 });

@@ -1,0 +1,28 @@
+@import './assets/sass/variables';
+
+body {
+  margin: 0;
+  font-family:'Segoe UI',sans-serif;
+  background-color: $primary-color;
+}
+
+.card-enter {
+  opacity: 0.01;
+  transform: scale(0.9);
+}
+
+.card-enter.card-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.card-leave {
+  opacity: 1;
+}
+
+.card-leave.card-leave-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms, transform 500ms;
+}
