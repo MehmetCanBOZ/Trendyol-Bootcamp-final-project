@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import useGameHooks from "../../Hooks/useGameHooks";
 import './Timer.scss'
 const Timer = () => {
   const { time } = useGameHooks();
-  
+
   return (
     <div data-test="timer-wrapper" className="timers">
       <div data-test="display-wrapper" id="display">

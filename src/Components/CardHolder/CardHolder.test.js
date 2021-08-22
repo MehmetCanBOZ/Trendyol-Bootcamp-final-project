@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import CardHolder from "./CardHolder";
 import { findByTestAttr } from "../../test/testUtils";
 

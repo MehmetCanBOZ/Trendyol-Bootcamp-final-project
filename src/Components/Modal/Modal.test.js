@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import Modal from "./Modal";
 import { findByTestAttr } from "../../test/testUtils";
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Header.scss";
 import Timer from "../Timer/Timer";
 import StopWatch from "../../assets/images/stopwatch.svg";

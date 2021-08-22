@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import Header from "./Header";
 import { findByTestAttr } from "../../test/testUtils";
 import Trophy from "../../assets/images/trophy.svg"

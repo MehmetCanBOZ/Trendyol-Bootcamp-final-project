@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import CardGrid from "./CardGrid";
-import { findByTestAttr, checkProp } from "../../test/testUtils";
-import { dragEnter, dragEnd } from '../../logic/DragandDrop/DragandDrop';
+import { findByTestAttr } from "../../test/testUtils";
+import { dragEnter } from '../../logic/DragandDrop/DragandDrop';
 
 jest.mock('../../logic/DragandDrop/DragandDrop',() => ({
   __esModule: true,

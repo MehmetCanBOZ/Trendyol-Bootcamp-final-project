@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import Timer from "./Timer";
 import { findByTestAttr } from "../../test/testUtils";
 

@@ -1,0 +1,40 @@
+@import "../assets/sass/mixin";
+
+.main {
+  @include grid(grid-template-columns,repeat(10, 1fr), 0, 0);
+  @include lgScreen {
+    @include grid(grid-template-columns,repeat(5, 1fr), 20px, 20px);
+    @include grid(grid-template-rows,repeat(2,300px), 400px, 0);
+    margin-top: 300px;
+  }
+  @include mdmScreen {
+    @include grid(grid-template-columns,repeat(5, 1fr), 20px, 20px);
+    @include grid(grid-template-rows,repeat(3,500px), 200px, 0);
+    margin-top: 350px;
+  }
+  @include smlScreen {
+    @include grid(grid-template-columns,repeat(2, 1fr), 20px, 20px);
+    @include grid(grid-template-rows,repeat(5,500px), 200px, 0);
+    margin-top: 550px;
+  }
+  margin: 20px;
+}
+
+.game-top-container{
+  @include grid(grid-template-columns, 500px 1fr, 0, 0);
+  @include lgScreen {
+    @include grid(grid-template-columns,1fr, 20px, 20px);
+    @include grid(grid-template-rows,repeat(2,200px), 0, 0);
+  }
+}
+
+.rem-card{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.rem-card div{
+  display: inline-block;
+  margin-left: -70px;
+  margin-bottom: 5px;
+}

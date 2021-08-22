@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import Home from "./Home";
 import GamplingGirl from "../../assets/images/gamblingGirl.png"
 import { findByTestAttr } from "../../test/testUtils";
