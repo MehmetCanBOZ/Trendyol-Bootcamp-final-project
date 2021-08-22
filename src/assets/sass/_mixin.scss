@@ -1,0 +1,45 @@
+@import '../../assets/sass/variables';
+
+@mixin flex($direction,$js-content,$al-items,$gap){
+    display: flex;
+    justify-content: $js-content;
+    align-items: $al-items;
+    flex-direction: $direction;
+    gap:$gap;
+}
+
+@mixin grid($grid-type, $args, $row-gap, $column-gap) {
+    @supports (display: grid) {
+      display: grid;
+      #{$grid-type}: #{$args};
+      gap: $row-gap $column-gap;
+    }
+}
+
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin backGroundSize($width,$height){
+    background-size: $width $height;
+}
+
+@mixin lgScreen {
+    @media (max-width:$lgScreen) {
+        @content;
+    }    
+}
+
+@mixin mdmScreen {
+    @media (max-width:$mdmScreen) {
+        @content;
+    }    
+}
+
+@mixin smlScreen {
+    @media (max-width:$smlScreen) {
+        @content;
+    }    
+}
+
