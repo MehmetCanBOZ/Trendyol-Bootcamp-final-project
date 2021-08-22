@@ -1,0 +1,33 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/functions';
+@import '../../assets/sass/mixin';
+
+.home{
+  @include flex(column,center,center,10px);
+  color: $primary-text-color;
+  .rules h2{
+    text-align: center;
+  }
+  .rules li{
+    font-size: fontSize(big);
+    font-weight: fontWeight(regular);
+    margin-bottom: 1rem;
+  }
+  .startGame{
+    width: 250px;
+    height: 50px;
+    color:$primary-button-color;
+    height: 50px;
+    font-size: fontSize(bigger);
+    font-weight: fontWeight(medium);
+    background-color: $primary-text-color;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    &:hover{
+      color:$primary-text-color;
+      background-color:$primary-button-color;
+    }
+  }
+}
