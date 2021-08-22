@@ -1,0 +1,19 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/functions';
+@import '../../assets/sass/mixin';
+
+.header{
+  @include flex(row,space-around,center,0);
+  background-color: $primary-header;
+  color: white;
+
+  h2{
+    font-size: fontSize(bigger);
+  }
+  
+  .timer,.score {
+    @include flex(row,center,center,10px);
+    gap:10px;  
+    color: $primary-text-color;
+  }
+}

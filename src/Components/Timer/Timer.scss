@@ -1,0 +1,12 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/functions';
+@import '../../assets/sass/mixin';
+
+.timers {
+  width: 180px;
+  
+  #display span {
+    font-size: fontSize(large);
+    color:$primary-text-color;
+  }
+}
