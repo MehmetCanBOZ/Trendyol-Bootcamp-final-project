@@ -11,7 +11,7 @@ jest.mock('react',()=>({
 }))
 
 jest.mock('react', () => ({
-  ...jest.requireActual('React'),
+  ...jest.requireActual('react'),
   useEffect: jest.fn(),
 }));
 
