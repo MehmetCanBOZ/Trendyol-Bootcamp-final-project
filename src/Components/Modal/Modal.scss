@@ -1,0 +1,70 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/functions';
+@import '../../assets/sass/mixin';
+
+.container{
+  position: relative;
+  top:10%;
+  z-index: 45;
+  .modal-wrapper{
+    background: $primary-white;
+    max-width: 400px;
+    height: 520px;
+    margin: 4rem auto;
+    transition: all 1.5s ease-in-out;
+    padding-bottom: 10px;
+    .modal-header{
+      background: $modal-header;
+      color: $primary-white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .modal-header p{
+      font-size: fontSize(bigger);
+    }
+  }
+
+  .modal-content{
+    padding: 1.5rem 1rem;
+    .modal-body{
+      margin-bottom: 1.25rem;
+    }
+    .modal-body p{
+      font-size: fontSize(bigger);
+      background: $modal-text-background;
+      color: $modal-text;
+      padding: 1rem;
+      margin: 1rem 2rem 0;
+      font-weight: fontWeight(medium);
+      text-align: center;
+    }
+  }
+
+  .modal-footer{
+    margin-top: 50px;
+    text-align: center;
+    button{
+      font-size: fontSize(bigger);
+      font-weight: fontWeight(medium);
+      padding: 1rem 1.8rem;
+      background: $primary-orange;
+      color: $primary-white;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+      &:hover{
+        color: $primary-orange;
+        background:$primary-white;
+        border: 2px solid $primary-orange;
+      }
+    }
+  }
+}
+
+.back-drop {
+    background: rgba(63, 61, 61, 0.692);
+    height: 100%;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+}
