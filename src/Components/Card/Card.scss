@@ -1,0 +1,61 @@
+@import '../../assets/sass/variables';
+@import '../../assets/sass/functions';
+@import '../../assets/sass/mixin';
+
+.card {
+  margin-bottom: -130px;
+  transition: all 2s smooth; 
+}
+
+.card__wrapper {
+  @include size(130px,160px);
+  position: relative;
+  cursor: pointer;
+  border-radius: 0.3vw;
+  background-color: $primary-card-color;
+  border: 1px solid $primary-gray;
+  .card__rank-left {
+    text-align: left;
+    margin-left: 0.2vw;
+    font-size: fontSize(bigger);
+    font-weight: fontWeight(bold);
+  }
+  .card__rank-right {
+    text-align: left;
+    position: relative;
+    transform: rotate(180deg);
+    top: 0.6vw;
+    margin-right: 0.3vw;
+    font-size: fontSize(bigger);
+    font-weight: fontWeight(bold);
+  }
+  &:hover{
+    box-shadow: 2px 2px 8px $primary-text-color;
+  }
+  .card__suit {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.card__down {
+  @include backGroundSize(130px,160px);
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/card_back.png");
+  text-decoration: transparent;
+  .card__content {
+    visibility: hidden;
+  }
+}
+
+.card__king > .card__suit {
+  visibility: hidden;
+}
+
+.card__king{
+  @include backGroundSize(130px,160px);
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/kral.jpg");
+  text-decoration: transparent;
+  margin-bottom: -130px;
+}
