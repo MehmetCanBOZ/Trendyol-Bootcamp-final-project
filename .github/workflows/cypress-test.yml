@@ -24,5 +24,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          install: false
-          start: yarn start-server
+          install: false start: 
+          start: npm --version
