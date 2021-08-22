@@ -12,17 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      # first, install dependencies and Cypress
-      # from the root folder using the lock file
-      - name: Cypress install
-        uses: cypress-io/github-action@v2
-        with:
-          runTests: false
-
-      # now run the tests from the subfolder
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          install: false start: 
-          start: npm --version
+          build: npm run build
+          start: npm start
