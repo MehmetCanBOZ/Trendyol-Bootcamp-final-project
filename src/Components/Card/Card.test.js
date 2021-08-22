@@ -10,7 +10,7 @@ jest.mock('react',()=>({
   useState:(initialState) => [initialState,mockIsDownState]
 }))
 
-jest.mock('React', () => ({
+jest.mock('react', () => ({
   ...jest.requireActual('React'),
   useEffect: jest.fn(),
 }));
