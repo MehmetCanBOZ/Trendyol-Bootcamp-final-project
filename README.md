@@ -2,6 +2,18 @@
 
 This is a Trendyol Frontend Bootcamp Final Project app.
 
+# Table of Contents
+
+[Live Website Link](#live-website-link)
+
+[Installation](#installation)
+
+[Contributing](#contributing)
+
+[License](#license)
+
+
+
 ## Live Website Link
 🔽✔
 [DEMO Reversed Spider Solitaire](https://reversed-spidersolitaire-mcboz.herokuapp.com/)
