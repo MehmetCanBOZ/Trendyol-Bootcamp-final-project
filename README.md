@@ -2,6 +2,10 @@
 
 This is a Trendyol Frontend Bootcamp Final Project app.
 
+Spider is a Solitaire game made popular by Microsoft Windows. It is played by 1 person only and uses 2 decks of cards.
+
+![Home Image](https://github.com/MehmetCanBOZ/Trendyol-Bootcamp-final-project/blob/main/src/assets/images/home.JPG)
+
 # Table of Contents
 
 [Live Website Link](#live-website-link)
