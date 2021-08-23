@@ -14,6 +14,8 @@ This is a Trendyol Frontend Bootcamp Final Project app.
 
 [Tests](#tests)
 
+[Lighthouse Reporth](#lighthouse-reporth)
+
 [Contributing](#contributing)
 
 [License](#license)
@@ -56,6 +58,17 @@ npm run start
 
 This app is tested with **enzyme**,**jest** and **cypress**.
 
+### Unit Test
+
+![Unit Test Result](https://github.com/MehmetCanBOZ/Trendyol-Bootcamp-final-project/tree/main/src/assets/images/test_result.JPG)
+
+### E2E Test
+
+
+
+## Lighthouse Reporth
+
+![Lighthouse Reporth](https://github.com/MehmetCanBOZ/Trendyol-Bootcamp-final-project/tree/main/src/assets/images/lighthousetest.JPG)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
