@@ -72,7 +72,7 @@ This app is tested with **enzyme**,**jest** and **cypress**.
 
 ### E2E Test
 
-
+![Unit Test Result](https://github.com/MehmetCanBOZ/Trendyol-Bootcamp-final-project/blob/main/src/assets/images/cypress.JPG)
 
 ## Lighthouse Reporth
 
