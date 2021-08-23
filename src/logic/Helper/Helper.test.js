@@ -1,4 +1,4 @@
-import { cardState, getRank, checkMovable , isCardsMovabletoDeck, checkDeck , selectCard ,resetGameState, checkHandCompleted} from "./Helper";
+import { cardState, getRank, checkMovable , isCardsMovabletoDeck, checkDeck , selectCard ,resetGameState, checkHandCompleted , playAgain} from "./Helper";
 import React from "react";
 
 describe("Helper Function Test ",() =>{
@@ -168,6 +168,13 @@ describe("Helper Function Test ",() =>{
   describe("testing removeSelection function " ,() => {
     test("check removeSelection",()=>{
       expect(() => resetGameState(stateSetter)).not.toThrow();
+      expect(stateSetter).toBeCalled();
+    })
+  });
+
+  describe("testing playAgain function " ,() => {
+    test("check playAgain",()=>{
+      expect(() => playAgain(stateSetter)).not.toThrow();
       expect(stateSetter).toBeCalled();
     })
   });
