@@ -1,9 +1,11 @@
 import * as _ from "lodash";
 import successSound from "../../assets/sound/success.mp3";
 import dealSound from "../../assets/sound/deal.mp3";
+import finishSound from "../../assets/sound/finish.mp3"
 
-var success = new Audio(successSound);
-var deal = new Audio(dealSound);
+const success = new Audio(successSound);
+const deal = new Audio(dealSound);
+const finish= new Audio(finishSound);
 
 export const getRank = (rank) => {
   if (rank === "K" || rank === "Q" || rank === "J" || rank === "A") {
@@ -152,6 +154,7 @@ export const checkHandCompleted = (deck, game, setgame) => {
           modalShow:true,
           score:curScore + 100,
         }));
+        finish.play();
       }
     }
 
@@ -163,7 +166,7 @@ export const checkHandCompleted = (deck, game, setgame) => {
 export const distributeRemCards = (game, setgame) => {
   var curRemCardDeck = game.remCardDeck
   deal.play();
-  
+
   if (game.decks[10].length !== 0) {
     var tempDecks = [...game.decks];
 
