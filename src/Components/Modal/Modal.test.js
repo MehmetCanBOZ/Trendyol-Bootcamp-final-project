@@ -54,7 +54,7 @@ describe("CardHolder Component Test",() =>{
       const modalInfoText= findByTestAttr(wrapper,'modal-info').text();
         
       expect(modalInfo.length).toBe(1);
-      expect(modalInfoText).toBe("You complete 8 hands and won the game. If you want to play again, click the play again. Enjoyyyyyy !!!");
+      expect(modalInfoText).toBe("You complete 8 hands and won the game. If you want to play again, go home and start to game. Enjoyyyyyy !!!");
     }); 
   });
 });

@@ -10,7 +10,7 @@ function Modal( ) {
         </div>
         <div data-test="modal-content" className="modal-content">
           <div data-test="modal-body" className="modal-body">
-            <p data-test="modal-info">You complete 8 hands and won the game. If you want to play again, click the play again. Enjoyyyyyy !!!</p>
+            <p data-test="modal-info">You complete 8 hands and won the game. If you want to play again, go home and start to game. Enjoyyyyyy !!!</p>
           </div>
           <div data-test="modal-footer" className="modal-footer">
             <Link to="/">
