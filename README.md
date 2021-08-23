@@ -60,7 +60,7 @@ This app is tested with **enzyme**,**jest** and **cypress**.
 
 ### Unit Test
 
-![Unit Test Result](https://github.com/MehmetCanBOZ/Trendyol-Bootcamp-final-project/tree/main/src/assets/images/test_result.JPG)
+![Unit Test Result](https://github.com/MehmetCanBOZ/Trendyol-Bootcamp-final-project/blob/main/src/assets/images/test_result.JPG)
 
 ### E2E Test
 
@@ -68,7 +68,7 @@ This app is tested with **enzyme**,**jest** and **cypress**.
 
 ## Lighthouse Reporth
 
-![Lighthouse Reporth](https://github.com/MehmetCanBOZ/Trendyol-Bootcamp-final-project/tree/main/src/assets/images/lighthousetest.JPG)
+![Lighthouse Reporth](https://github.com/MehmetCanBOZ/Trendyol-Bootcamp-final-project/blob/main/src/assets/images/lighthousetest.JPG)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
