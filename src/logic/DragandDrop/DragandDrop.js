@@ -55,7 +55,7 @@ export const dragEnter = (game, setgame, deck) => {
   }));
 };
 
-export const dragEnd = (game, setgame) => {
+export const dragEnd = (game, setgame, time) => {
   var tempDecks=[...game.decks];
   var tempDeckIndex = tempDecks.indexOf(game.targetDeck);
 
@@ -82,7 +82,7 @@ export const dragEnd = (game, setgame) => {
       game
     );
     flip.play();
-    checkHandCompleted(game.targetDeck, game, setgame); 
+    checkHandCompleted(game.targetDeck, game, setgame,time); 
     resetGameState(setgame);
   }// Drop on cards Case
   else if (isCardsMovabletoDeck(game.targetDeck, game)) {
@@ -101,7 +101,7 @@ export const dragEnd = (game, setgame) => {
         game
       );
       flip.play();
-      checkHandCompleted(game.targetDeck, game, setgame);
+      checkHandCompleted(game.targetDeck, game, setgame,time);
       resetGameState(setgame);
       return;
   } else {

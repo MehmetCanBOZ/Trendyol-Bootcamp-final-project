@@ -9,11 +9,11 @@ import {
 }from "../../logic/DragandDrop/DragandDrop";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
-const CardGrid = ({ deck , index, game ,setGame }) => {
+const CardGrid = ({ deck , index, game ,setGame, time }) => {
   return (
     <div data-test = "card-wrapper" deck={deck} className = "" 
       onDragEnter = {(e) => { dragEnter(game, setGame, deck); }}
-      onDragEnd = {(e) => { dragEnd(game, setGame); }}
+      onDragEnd = {(e) => { dragEnd(game, setGame ,time); }}
       id = {index}
      >
       <ReactCSSTransitionGroup

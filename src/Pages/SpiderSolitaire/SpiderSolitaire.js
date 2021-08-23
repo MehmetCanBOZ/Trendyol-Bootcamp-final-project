@@ -10,7 +10,7 @@ import CardGrid from "../../Components/CardGrid/CardGrid";
 import HandsHolder from "../../Components/HandsHolder/HandsHolder";
 
 function SpiderSolitaire() {
-  const {  game, setGame } = useGameHooks();
+  const {  game, setGame, time } = useGameHooks();
 
   return (
     <>
@@ -35,7 +35,7 @@ function SpiderSolitaire() {
                   <CardHolder key={index + " 1"} deck={deck} />
                   </div>
                 ) : (
-                  <CardGrid game={game} setGame={setGame} key={index + " 2"} index={index} deck={deck} />
+                  <CardGrid game={game} setGame={setGame} key={index + " 2"} index={index} deck={deck} time = {time}/>
                 )}
               </>
             ))}

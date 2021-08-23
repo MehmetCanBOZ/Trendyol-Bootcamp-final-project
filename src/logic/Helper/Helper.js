@@ -122,7 +122,7 @@ export const checkDeck = (deck) => {
   return false;
 };
   
-export const checkHandCompleted = (deck, game, setgame) => {
+export const checkHandCompleted = (deck, game, setgame, time) => {
   try{
     var len = checkDeck(deck);
     if (len !== false) {
@@ -141,18 +141,25 @@ export const checkHandCompleted = (deck, game, setgame) => {
         tempDecks[curDeckIdx][tempDecks[curDeckIdx].length - 1].isDown = false;
       }
       success.play();
+      var handScore = 100;
+      var reduceScore = Math.round((time/60) * 5) - curHands;
+      if(reduceScore > 100){
+        handScore = 0;
+      }else{
+        handScore = handScore - reduceScore;
+      }
+
       setgame((prevState) => ({
         ...prevState,
         decks: tempDecks,
         hands: curHands + 1,
-        score:curScore + 100,
+        score:curScore + handScore,
       }));
 
       if (curHands + 1 === 8) {
         setgame((prevState) => ({
           ...prevState,
           modalShow:true,
-          score:curScore + 100,
         }));
         finish.play();
       }
