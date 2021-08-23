@@ -137,12 +137,6 @@ describe("Helper Function Test ",() =>{
     })
   });
 
-  describe("testing playAgain function " ,() => {
-    test("check playAgain",()=>{
-      expect(() => playAgain(stateSetter)).not.toThrow();
-      expect(stateSetter).toBeCalled();
-    })
-  });
 
   describe("testing isHandComplete function " ,() => {
     var deck = [""]

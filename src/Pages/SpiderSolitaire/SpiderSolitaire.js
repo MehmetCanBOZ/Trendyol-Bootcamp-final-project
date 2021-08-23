@@ -14,7 +14,7 @@ function SpiderSolitaire() {
 
   return (
     <>
-      {game?.modalShow ? <Modal setGame={setGame}/>:
+      {game?.modalShow ? <Modal />:
         <>
           <Header game={game}/>
           <div data-test="rem-card-wrapper" className="game-top-container">
