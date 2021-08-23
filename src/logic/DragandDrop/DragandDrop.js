@@ -1,4 +1,9 @@
 import { isCardsMovabletoDeck, resetGameState, setSelectedCardstoDeck, selectCard, checkHandCompleted } from "../Helper/Helper"
+import CardFlipSound from "../../assets/sound/card_flip.mp3"
+import Error from "../../assets/sound/error.mp3";
+
+var flip = new Audio(CardFlipSound);
+var errorSound = new Audio(Error);
 
 export const dragStart = (event, card, deck, game, setgame) => {
   const x = event.pageX;
@@ -63,7 +68,7 @@ export const dragEnd = (game, setgame) => {
       var css = "z-index:0;pointer-events:auto;";
       child.style.cssText = css;
     });
-      
+    errorSound.play();
     resetGameState(setgame);
     return;
   }
@@ -76,7 +81,7 @@ export const dragEnd = (game, setgame) => {
       setgame,
       game
     );
-
+    flip.play();
     checkHandCompleted(game.targetDeck, game, setgame); 
     resetGameState(setgame);
   }// Drop on cards Case
@@ -95,6 +100,7 @@ export const dragEnd = (game, setgame) => {
         setgame,
         game
       );
+      flip.play();
       checkHandCompleted(game.targetDeck, game, setgame);
       resetGameState(setgame);
       return;
@@ -106,7 +112,7 @@ export const dragEnd = (game, setgame) => {
     var css = "z-index:0;pointer-events:auto;";
     child.style.cssText = css;
     });
-    
+    errorSound.play();
     resetGameState(setgame);
   }
 };
