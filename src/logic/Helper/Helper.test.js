@@ -31,41 +31,6 @@ describe("Helper Function Test ",() =>{
     });
   });
 
-  describe("testing getRank function " ,() => {
-    var rank = ""
-    var rankValue = ""
-
-    test('rank K value', () => {
-      rank = "K"
-      rankValue = getRank(rank);
-      expect(rankValue).toBe(13)
-    });
-
-    test('rank Q value', () => {
-      rank = "Q"
-      rankValue = getRank(rank);
-      expect(rankValue).toBe(12)
-    });
-    
-    test('rank J value', () => {
-      rank = "J"
-      rankValue = getRank(rank);
-      expect(rankValue).toBe(11)
-    });
-
-    test('rank A value', () => {
-      rank = "A"
-      rankValue = getRank(rank);
-            expect(rankValue).toBe(1)
-    });
-
-    test('rank 5 value', () => {
-      rank = "5"
-      rankValue = getRank(rank);
-      expect(rankValue).toBe(5)
-    });
-  
-  })
 
   describe("testing checkMovable function " ,() => {
     var deckSS = ""

@@ -7,7 +7,7 @@ const success = new Audio(successSound);
 const deal = new Audio(dealSound);
 const finish= new Audio(finishSound);
 
-export const getRank = (rank) => {
+/*export const getRank = (rank) => {
   if (rank === "K" || rank === "Q" || rank === "J" || rank === "A") {
     switch (rank) {
       case "K":
@@ -22,7 +22,7 @@ export const getRank = (rank) => {
   } else {
     return parseInt(rank);
   }
-};
+};*/
 
 export const checkMovable = (card, deck) => {
   var tempDeck = [...deck];
