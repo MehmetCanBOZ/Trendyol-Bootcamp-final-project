@@ -9,7 +9,7 @@ const Card = ({ card , isDown }) => {
   
   useEffect(() => {
     setdown(cardState(card));
-  }, [isDown]);
+  }, [isDown,card]);
   
   return (
     <div data-test="card-wrapper" className={"card__wrapper"  + down }>
