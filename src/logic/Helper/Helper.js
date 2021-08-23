@@ -7,23 +7,6 @@ const success = new Audio(successSound);
 const deal = new Audio(dealSound);
 const finish= new Audio(finishSound);
 
-/*export const getRank = (rank) => {
-  if (rank === "K" || rank === "Q" || rank === "J" || rank === "A") {
-    switch (rank) {
-      case "K":
-        return 13;
-      case "Q":
-        return 12;
-      case "J":
-        return 11;
-      case "A":
-        return 1;
-    }
-  } else {
-    return parseInt(rank);
-  }
-};*/
-
 export const checkMovable = (card, deck) => {
   var tempDeck = [...deck];
   var movingCards = tempDeck.slice(deck.indexOf(card));
