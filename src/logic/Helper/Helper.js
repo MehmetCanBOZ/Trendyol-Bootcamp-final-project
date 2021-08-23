@@ -59,10 +59,17 @@ export const resetGameState = (setgame) => {
     selectedCard: "",
     fromDeck: "",
     targetDeck: "",
-    modalShow:false,
   }));
 };
-  
+
+export const playAgain = (setgame) => {
+  setgame((prevState) => ({
+    ...prevState,
+    modalShow:false,
+    score:0
+  }));
+};
+
 export const setSelectedCardstoDeck = function (toDeck, fromDeck, fromCard, setgame, game) {
   try{
     var tempDeck = [...game.decks];

@@ -35,7 +35,7 @@ const useGameHooks = () =>{
   useEffect(() => {
     setUpTimer();
     setUpGame();
-  }, []);
+  }, [game.modalShow]);
 
   return {
    time, game, setGame , interval ,setTime

@@ -1,5 +1,5 @@
 import "./Modal.scss";
-import { resetGameState } from "../../logic/Helper/Helper";
+import { playAgain } from "../../logic/Helper/Helper";
 
 function Modal( {setGame}) {
   return (
@@ -13,7 +13,7 @@ function Modal( {setGame}) {
             <p data-test="modal-info">You complete 8 hands and won the game. If you want to play again, click the play again. Enjoyyyyyy !!!</p>
           </div>
           <div data-test="modal-footer" className="modal-footer">
-            <button data-test="modal-button"  className="btn-cancel" onClick={(e) => resetGameState(setGame)}>Play Again</button>
+            <button data-test="modal-button"  className="btn-cancel" onClick={(e) => playAgain(setGame)}>Play Again</button>
           </div>
         </div>
       </div>
