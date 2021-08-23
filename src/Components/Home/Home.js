@@ -8,7 +8,7 @@ function Home() {
     <div data-test="home-app" className="home">
       <h1 data-test="home-header">Welcome Reversed Spider SpiderSolitaire</h1>
     <div data-test="home-image-wrapper" className="flex">
-      <img data-test="home-image" src={GamplingGirl} alt="playingCards" width="300"/>
+      <img data-test="home-image" src={GamplingGirl} alt="playingCards" width="300" height="300"/>
     </div>
     <div data-test="home-rules-wrapper" className="rules">
       <h2 data-test="home-rules-header">How To Play ?</h2>
