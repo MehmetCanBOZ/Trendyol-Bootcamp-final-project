@@ -15,7 +15,7 @@ jest.mock('react', () => ({
   useEffect: jest.fn(),
 }));
 
-const defaultProps = { card:{rank:"5",suit:"spade",isDown:true, deck:1 }};
+const defaultProps = { card:{rank:"5",suit:"spade",isDown:true, deck:1 },isDown = true};
 
 const setup = (props={}) =>{
   const setUpProps={...defaultProps,...props};
@@ -82,7 +82,7 @@ describe("Card Component Tests",()=>{
   });
 
   test('does not throw warning with expected props', () => {
-    const expectedProps = { card:{rank:"5",suit:"spade",isDown:true,deck:1 }}
+    const expectedProps = { card:{rank:"5",suit:"spade",isDown:true,deck:1 },isDown = true}
 
     checkProp(Card,expectedProps);
   });

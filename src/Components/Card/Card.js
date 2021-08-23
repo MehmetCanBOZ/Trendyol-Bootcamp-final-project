@@ -4,12 +4,12 @@ import Suit from "../../assets/images/spade.png"
 import "./Card.scss";
 import { cardState } from "../../logic/Helper/Helper";
 
-const Card = ({ card }) => {
+const Card = ({ card , isDown }) => {
   const [down, setdown] = useState("");
   
   useEffect(() => {
     setdown(cardState(card));
-  }, [card.isDown]);
+  }, [isDown]);
   
   return (
     <div data-test="card-wrapper" className={"card__wrapper"  + down }>
@@ -21,7 +21,8 @@ const Card = ({ card }) => {
 }
 
 Card.propTypes = {
-  card:PropTypes.object.isRequired
+  card:PropTypes.object.isRequired,
+  isDown:PropTypes.bool.isRequired
 }
 
 export default Card;

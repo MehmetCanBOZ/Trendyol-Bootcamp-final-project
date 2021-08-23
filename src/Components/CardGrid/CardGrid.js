@@ -35,8 +35,9 @@ const CardGrid = ({ deck , index, game ,setGame }) => {
             data-test="card-container"
           >
           <Card
-            key={card.rank + " " + card.deck}
-            card={card}
+            key = {card.rank + " " + card.deck}
+            card = {card}
+            isDown = {card.isDown}
           />
           </div>
         ))
