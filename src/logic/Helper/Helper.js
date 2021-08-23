@@ -28,9 +28,9 @@ export const checkMovable = (card, deck) => {
   var tempDeck = [...deck];
   var movingCards = tempDeck.slice(deck.indexOf(card));
   var ranks = movingCards.map((curCard) => {
-    return getRank(curCard.rank);
+    return curCard.value;
   });
-  var curRank = getRank(card.rank);
+  var curRank = card.value;
  
   for (let i = 1; i < ranks.length; i++) {
     if ( ranks[i] - curRank != 1){
@@ -45,7 +45,7 @@ export const checkMovable = (card, deck) => {
 export const isCardsMovabletoDeck = (deck, game) => {
   var lastCard = deck[deck.length - 1]
     
-  if (getRank(game.selectedCard.rank) - getRank(lastCard.rank) == 1) {
+  if (game.selectedCard.value - lastCard.value == 1) {
     return true;
   }
 
@@ -118,7 +118,7 @@ export const selectCard = (card, deck, setgame) => {
   
 export const checkDeck = (deck) => {  
   var ranks = deck.map((card) => {
-    return getRank(card.rank);
+    return card.value;
   }); 
   
   const expectedArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];

@@ -1,6 +1,7 @@
 import * as _ from "lodash";
 
 const cardRanks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+const cardRanksValue = {A:1,J:11,Q:12, K:13}
 
 export const gameStarter =  () => {
   let cards = [],
@@ -12,6 +13,7 @@ export const gameStarter =  () => {
       rank: rank,
       isDown: true,
       deck: i,
+      value:cardRanksValue[rank] || parseInt(rank)
       });
     }
   });
